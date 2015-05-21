@@ -1,0 +1,2 @@
+[10-May-2015 00:40:51 America/Chicago] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/bhaloachee/public_html/dev/db/getshop.php on line 16
+[18-May-2015 16:50:35 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/bhaloachee/public_html/dev/db/search.php on line 13

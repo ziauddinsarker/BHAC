@@ -1,0 +1,347 @@
+[12-May-2015 07:36:00 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/bhaloachee/public_html/dev/deshboard/pages/login_submit.php:2) in /home/bhaloachee/public_html/dev/deshboard/pages/login_submit.php on line 5
+[12-May-2015 07:36:00 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/bhaloachee/public_html/dev/deshboard/pages/login_submit.php:2) in /home/bhaloachee/public_html/dev/deshboard/pages/login_submit.php on line 5
+[12-May-2015 07:38:43 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/bhaloachee/public_html/dev/deshboard/pages/login_submit.php:2) in /home/bhaloachee/public_html/dev/deshboard/pages/login_submit.php on line 5
+[12-May-2015 07:38:43 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/bhaloachee/public_html/dev/deshboard/pages/login_submit.php:2) in /home/bhaloachee/public_html/dev/deshboard/pages/login_submit.php on line 5
+[12-May-2015 07:39:45 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/bhaloachee/public_html/dev/deshboard/pages/connect-db.php on line 14
+[12-May-2015 07:42:19 America/Chicago] PHP Warning:  mysql_result(): user_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/users.php on line 192
+[12-May-2015 07:42:19 America/Chicago] PHP Warning:  mysql_result(): user_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/users.php on line 192
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): brand_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 195
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): generic_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 196
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): company_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drug_form_name not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 198
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): strength not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 199
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): package_type not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 200
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drags_price not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 201
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:45:26 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:46:57 America/Chicago] PHP Warning:  mysql_result(): drag_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): `24 hour` not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 197
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:48:26 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
+[12-May-2015 07:49:21 America/Chicago] PHP Warning:  mysql_result(): shop_id not found in MySQL result index 4 in /home/bhaloachee/public_html/dev/deshboard/pages/shop.php on line 202
