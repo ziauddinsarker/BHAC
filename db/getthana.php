@@ -1,7 +1,7 @@
 <?php 
 include('config.php');
 $thana=$_GET["thana"]; 
-$sql="SELECT  thana.thana_name,  districs.distric_name FROM thana INNER JOIN districs ON thana.fk_district = districs.distric_id WHERE districs.distric_name = '$thana'"; 
+$sql="SELECT thana.thana_name FROM thana INNER JOIN district ON thana.district_name = district.district_id WHERE district.district_name = '$thana'"; 
 $result = mysql_query($sql); 
 
 // This is helpful for debugging

@@ -38,15 +38,17 @@
 		<div id="navbar" class="navbar-collapse collapse">
 		  <ul class="nav navbar-nav">
 			<li><a href="about.html">How Bhaloaachee Works!</a></li>
-			<li><a href="contact.html">More</a></li>
+			<!-- <li><a href="contact.html">More</a></li> -->
 		  </ul>
+		  <!--
 		  <nav class="main-nav nav navbar-nav navbar-right">
 			<ul>
-				<!-- inser more links here -->
+				<!-- inser more links here --><!-- 
 				<li><a class="cd-signin" href="#0">Sign in</a></li>
 				<li><a class="cd-signup" href="#0">Sign up</a></li>
 			</ul>
 		</nav>
+		-->
 		</div><!--/.nav-collapse -->
 	  </div>
 	</nav>

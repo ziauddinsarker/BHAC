@@ -23,13 +23,14 @@ if ($conn->connect_error) {
 
 
 //Shop Sql Query
-$shopsql = "SELECT medicin_shop.shop_name, medicin_shop.shop_address, medicin_shop.cell,thana.thana_name FROM medicin_shop INNER JOIN thana ON medicin_shop.fk_thana = thana.thana_id WHERE thana.thana_name = '$q'";  
+$shopsql = "SELECT shop.shop_name, shop.shop_address, shop.twenty_four_hours, shop.`call`, shop.home_delivery, thana.thana_name FROM shop INNER JOIN thana ON shop.thana = thana.thana_name WHERE thana.thana_name = '$q'";  
 //Brand/Drag Sql Query
-$brandsql ="SELECT drags.brand_name, drags.brand_description, generic.generic_name FROM drags INNER JOIN generic ON drags.fk_generic_name = generic.generic_id WHERE drags.brand_name = '$name'";
+$brandsql ="SELECT brand.brand_name, brand.brand_description,  generic.generic_name FROM brand INNER JOIN generic ON brand.generic_name_fk = generic.generic_name WHERE brand.brand_name = '$name'";
 //Form SQL Query
 $formsql="SELECT drug_form.drug_form_name, drags.brand_name FROM drug_form INNER JOIN drug_form_mut ON drug_form_mut.drug_form = drug_form.drug_form_id INNER JOIN drags ON drug_form_mut.drug_name = drags.drag_id WHERE drags.brand_name = '$name'";
 //Price SQL Query
-$pricesql="SELECT drags.brand_name, price.drags_price, price.strength, price.quantity, generic.generic_name, company.company_name FROM drags INNER JOIN price ON drags.fk_price = price.price_id INNER JOIN generic ON drags.fk_generic_name = generic.generic_id INNER JOIN company ON drags.fk_company_name = company.company_id WHERE generic.generic_name = (SELECT generic.generic_name  FROM drags INNER JOIN generic ON drags.fk_generic_name = generic.generic_id WHERE drags.brand_name = '$name')";
+//$pricesql="SELECT drags.brand_name, price.drags_price, price.strength, price.quantity, generic.generic_name, company.company_name FROM drags INNER JOIN price ON drags.fk_price = price.price_id INNER JOIN generic ON drags.fk_generic_name = generic.generic_id INNER JOIN company ON drags.fk_company_name = company.company_id WHERE generic.generic_name = (SELECT generic.generic_name  FROM drags INNER JOIN generic ON drags.fk_generic_name = generic.generic_id WHERE drags.brand_name = '$name')";
+$pricesql="SELECT brand.brand_name, form.form_name,strength.strength_name, brand_strength_form_price.price, generic.generic_name, company.company_name,pack.packsize_quantity FROM brand_strength_form_price INNER JOIN brand ON brand_strength_form_price.brand_name_fk = brand.brand_name INNER JOIN form ON brand_strength_form_price.form_name_fk = form.form_name INNER JOIN strength ON brand_strength_form_price.strength_name_fk = strength.strength_name INNER JOIN pack ON brand_strength_form_price.packsize_fk = pack.packsize_name INNER JOIN generic ON brand.generic_name_fk = generic.generic_name INNER JOIN company ON brand.company_fk = company.company_name WHERE generic.generic_name = (SELECT generic.generic_name FROM generic INNER JOIN brand ON brand.generic_name_fk = generic.generic_name WHERE brand.brand_name = '$name')";
 
 
 $strengthsql ="SELECT drug_strength.drug_strength_name, drags.brand_name FROM drug_strength_mut INNER JOIN drug_strength ON drug_strength_mut.drug_strength_name = drug_strength.drug_strength_id INNER JOIN drags ON drug_strength_mut.drugs_name = drags.drag_id WHERE drags.brand_name = '$name'";
@@ -71,58 +72,7 @@ $strengthsqlrs = $conn->query($strengthsql);
 									</div>
 								</article>
 								
-								<!-- Medicine Verity -->
-								<article class="row medicine-verity">					
-									<div class="form-block col-md-4">
-										<h5>Form</h5>
-										<div class="btn-group" data-toggle="buttons">
-											<?php								
-												//shop information
-												if ($formsqlrs->num_rows > 0) {
-													// output data of each row
-													while($row = $formsqlrs->fetch_assoc()) {								
-												
-													echo "<label class=\"btn btn-primary\">";
-													echo "<input type=\"radio\" name=\"form\" class=\"track-order-change\" id=". strtolower($row['drug_form_name']) ." value=\"{$row['drug_form_name']}\" onchange='filterForm(this.value)'>";
-													echo  $row['drug_form_name'];
-													echo "</label>";													
-													}
-												}
-													else {
-													echo "0 results";
-													}
-																									
-												?>
-										</div>
-									</div>
-									
-									<div class="strength-block col-md-4">
-										<h5>Strength</h5>
-										<div class="btn-group" data-toggle="buttons">   
-											<?php								
-												//shop information
-												if ($strengthsqlrs->num_rows > 0) {
-													// output data of each row
-													while($row = $strengthsqlrs->fetch_assoc()) {								
-												
-													echo "<label class=\"btn btn-primary\">";
-													echo "<input type=\"radio\" name=\"form\" class=\"track-order-change\" id=". strtolower($row['drug_strength_name']) ." value=".$row['drug_strength_name']." onchange='showShop(this.value)'>";
-													echo  $row['drug_strength_name'];
-													echo "</label>";													
-													}
-												}
-													else {
-													echo "0 results";
-													}
-																									
-												?>											
-										</div>
-									</div>
-									
-									<div class="col-md-4">
-									<div id="map-canvas"></div>
-									</div>	
-								</article>
+								
 								
 								<article class="row">
 								<!-- Shop Details -->
@@ -144,7 +94,7 @@ $strengthsqlrs = $conn->query($strengthsql);
 												// output data of each row
 												while($row = $pricesqlrs->fetch_assoc()) {	
 												
-												$price = $row["drags_price"]/$row["quantity"];
+												$price = $row["price"]/$row["packsize_quantity"];
 												
 												echo "<div>";
 													echo '<h5><a href="#">' . $row["brand_name"] . '</a><span class="brand-rating"> <a href="">(2)</a></span>

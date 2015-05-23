@@ -17,8 +17,9 @@
 		</div>
 		-->
 		<div class="row">		
-			<div class="col-md-6 footer-navigation">	
-<!--			
+			<div class="col-md-6 footer-navigation">
+
+				<!--			
 				<nav>
 					<a href="#">About Us</a>		
 					<a href="#">Legal</a>		
@@ -26,7 +27,7 @@
 					<a>Contact Us</a>			
 					<a>Report an Error</a>	
 				</nav>
-	-->			
+				-->
 			 </div>
 			<div class="col-md-6 copyright">	
 				<p>&copy; Bhalo-Aachee - 2015. All Rights Reserved.</p>
@@ -39,52 +40,55 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
-		<script src="js/typeahead.min.js"></script>		<script src="js/hogan-3.0.2.min.js"></script>
+		<script src="js/typeahead.min.js"></script>
+		<script src="js/hogan-3.0.2.min.js"></script>
 		<script src="js/main.js"></script>
-		<script src="js/login.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js"></script>
 		<script>
-		  function initialize() {
-			var mapCanvas = document.getElementById('map-canvas');
-			var mapOptions = {
-			  center: new google.maps.LatLng(23.7823189, 90.431143),
-			  zoom: 14,
-			  mapTypeId: google.maps.MapTypeId.ROADMAP
-			}
-			var map = new google.maps.Map(mapCanvas, mapOptions)
-		  }
-		  google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
-			<script>
 			$(document).ready(function(){
-			$('input.typeahead').typeahead({
-				name: 'typeahead',				
-				limit : 10,		
-				valueKey: 'brand_name',				
-				template: '<p>{{brand_name}} - {{drug_strength_name}} - ({{drug_form_name}})</p>',				
-				engine: Hogan,				
-				remote:'db/search.php?key=%QUERY'
+			
+				$('input.typeahead').typeahead({
+					name: 'typeahead',
+					//header:'<h2>Name</h2>',
+					valueKey: 'brand_name_fk',
+					template: '<p>{{brand_name_fk}} - {{strength_name_fk}} - ({{form_name_fk}})</p>',
+					engine: Hogan,
+					remote:'db/search.php?key=%QUERY',
+					limit : 10
+				}).on('typeahead:selected', function($e, datum) {  // suggestion selected
+				
+				//.on('typeahead:selected',function(event,suggestions){	$myTextarea.append(suggestions.value, ' ');$('.typeahead').val('');});
+				
+						 var brandname = datum['brand_name_fk'];
+						 var strengthname = datum['strength_name_fk'];
+						 var formname = datum['form_name_fk'];
+				
+						  console.log('Brand: ' + brandname + 'Strength:'+ strengthname + 'Form:'+ formname ) ;
+						  
+						  //var brand = datum['brand_name_fk']);
+						  //document.write(brand);
+			  });
 			});
-		});		
+			
+			// - {{strength_name_fk}} - ({{form_name_fk}})
 		</script>
-		
+	
 		<script>
 			function fetchfromMysqlDatabase() {
-                  $.ajax({
-                    type: "GET",
-                    dataType: "html",
-                    url: "getrecords.php",
-                    cache: false,
-                    beforeSend: function() {
-                       $('#res3').html('loading please wait...');
-                    },
-                    success: function(htmldata) {
-                       $('#res3').html(htmldata);
-                    }
-                  });
-                }
+				  $.ajax({
+					type: "GET",
+					dataType: "html",
+					url: "getrecords.php",
+					cache: false,
+					beforeSend: function() {
+					   $('#res3').html('loading please wait...');
+					},
+					success: function(htmldata) {
+					   $('#res3').html(htmldata);
+					}
+				  });
+				}
 		</script>
-		
+			
 		<script type="text/javascript">
 		
 			/*
@@ -125,6 +129,9 @@
 			*/
 			function showThana(str)
 			{
+				window.str;
+				
+				
 			if (str=="")
 			  {
 			  document.getElementById("div-dis-tha").innerHTML="";
@@ -138,6 +145,9 @@
 			  {// code for IE6, IE5
 			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 			  }
+			  
+			  
+			  
 			xmlhttp.onreadystatechange=function()
 			  {
 			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
@@ -149,13 +159,7 @@
 			xmlhttp.send();
 			}
 			
-			
-			
-			/*
-			*
-			* Show the Shop on the homepage when clicking 
-			*
-			*/
+			//Show Shop
 			function showShop(str)
 			{
 			if (str=="")
@@ -167,7 +171,7 @@
 			// var txt=$('input:text[name=name]').val();
 			  var name = document.getElementById("name").value;
 			  
-			
+			window.thana = str;
 			var queryString = "q=" + str + "&name=" + name;
 			
 			//xmlhttp.open("GET","theme/getmove.php"+queryString,true);
@@ -189,44 +193,6 @@
 			  }
 			  
 			xmlhttp.open("GET","db/getshop.php?"+queryString,true);
-			xmlhttp.send();
-			}
-			
-			/*
-			*
-			* Filter Drags based on Form Clicking 
-			*
-			*/
-			
-			function filterForm(str)
-			{
-			if (str=="")
-			  {
-			  document.getElementById("price-filter").innerHTML="";
-			  return;
-			  } 
-			  
-			  var genericname = document.getElementById("genericname").text;
-			
-			var queryString = str + "&genericname=" + genericname;
-			  
-			  
-			if (window.XMLHttpRequest)
-			  {// code for IE7+, Firefox, Chrome, Opera, Safari
-			  xmlhttp=new XMLHttpRequest();
-			  }
-			else
-			  {// code for IE6, IE5
-			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-			  }
-			xmlhttp.onreadystatechange=function()
-			  {
-			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-				{
-				document.getElementById("price-filter").innerHTML=xmlhttp.responseText;
-				}
-			  }
-			xmlhttp.open("GET","db/filterform.php?form="+queryString,true);
 			xmlhttp.send();
 			}
 			
@@ -278,15 +244,16 @@
 		</script>
 		<script type="text/javascript">
       var busy = false;
-      var limit = 15
+      var limit = 10
       var offset = 0;
+		var thana = window.str;
 
       function displayRecords(lim, off) {
         $.ajax({
           type: "GET",
           async: false,
           url: "db/getshoprecords.php",
-          data: "limit=" + lim + "&offset=" + off,
+          data: "limit=" + lim + "&offset=" + off + "&thana=" + thana,
           cache: false,
           beforeSend: function() {
             $("#loader_message").html("").hide();
@@ -334,5 +301,6 @@
       });
 
     </script>
+		
     </body>
 </html>

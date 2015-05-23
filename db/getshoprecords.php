@@ -7,11 +7,13 @@
  * @googleplus https://plus.google.com/+thesoftwareguyIn
  */
 require_once("configshop.php");
+$thana=$_GET['thana'];
+echo "name: " .$thana;
 
 $limit = (intval($_GET['limit']) != 0 ) ? $_GET['limit'] : 10;
 $offset = (intval($_GET['offset']) != 0 ) ? $_GET['offset'] : 0;
 
-$sql = "SELECT medicin_shop.shop_name,  medicin_shop.shop_address, medicin_shop.cell FROM medicin_shop WHERE 1 ORDER BY shop_name ASC LIMIT $limit OFFSET $offset";
+$sql = "SELECT shop.shop_name,shop.shop_address,shop.`call`,shop.twenty_four_hours,shop.home_delivery,thana.thana_name FROM shop INNER JOIN thana ON shop.thana = thana.thana_name WHERE 1 AND thana.thana_name = '$thana' ORDER BY shop_name ASC LIMIT $limit OFFSET $offset";
 	try {
 	  $stmt = $DB->prepare($sql);
 	  $stmt->execute();
@@ -26,7 +28,7 @@ $sql = "SELECT medicin_shop.shop_name,  medicin_shop.shop_address, medicin_shop.
 		echo '<div class="col-md-9">';
 			echo '<h5>' . $row["shop_name"] . '<span>(30)</span></h5>';
 			echo '<p>Location: '. $row["shop_address"] . '<p>';	
-			echo '<p>Phone: ' . $row["cell"] . '</p>';															
+			echo '<p>Phone: ' . $row["call"] . '</p>';															
 			echo '<p><span class="glyphicon glyphicon-home"></span><span class="glyphicon glyphicon-earphone"></span><span class="glyphicon glyphicon-print"></span>';
 		 echo '</p>';
 		echo '</div>';
