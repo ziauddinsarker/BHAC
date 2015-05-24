@@ -16,7 +16,7 @@
 <input type="text" id="user_pass" name="user_pass" value="" maxlength="20" />
 </p>
 <p>
-<input type="submit" value="? Login" />
+<input type="submit" value="Login" />
 </p>
 </fieldset>
 </form>

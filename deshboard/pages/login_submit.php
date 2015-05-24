@@ -9,32 +9,31 @@ if(isset( $_SESSION['user_id'] ))
     $message = 'Users is already logged in';
 }
 /*** check that both the username, password have been submitted ***/
-if(!isset( $_POST['user_name'], $_POST['user_pass']))
-{
+if(!isset( $_POST['user_name'], $_POST['user_pass'])){
     $message = 'Please enter a valid username and password';
-}
-/*** check the username is the correct length ***/
-elseif (strlen( $_POST['user_name']) > 20 || strlen($_POST['user_name']) < 4)
-{
-    $message = 'Incorrect Length for Username';
-}
-/*** check the password is the correct length ***/
-elseif (strlen( $_POST['user_pass']) > 20 || strlen($_POST['user_pass']) < 4)
-{
-    $message = 'Incorrect Length for Password';
-}
-/*** check the username has only alpha numeric characters ***/
-elseif (ctype_alnum($_POST['user_name']) != true)
-{
-    /*** if there is no match ***/
-    $message = "Username must be alpha numeric";
-}
-/*** check the password has only alpha numeric characters ***/
-elseif (ctype_alnum($_POST['user_pass']) != true)
-{
-        /*** if there is no match ***/
-        $message = "Password must be alpha numeric";
-}
+	}
+		/*** check the username is the correct length ***/
+		elseif (strlen( $_POST['user_name']) > 20 || strlen($_POST['user_name']) < 4)
+		{
+			$message = 'Incorrect Length for Username';
+		}
+		/*** check the password is the correct length ***/
+		elseif (strlen( $_POST['user_pass']) > 20 || strlen($_POST['user_pass']) < 4)
+		{
+			$message = 'Incorrect Length for Password';
+		}
+		/*** check the username has only alpha numeric characters ***/
+		elseif (ctype_alnum($_POST['user_name']) != true)
+		{
+			/*** if there is no match ***/
+			$message = "Username must be alpha numeric";
+		}
+		/*** check the password has only alpha numeric characters ***/
+		elseif (ctype_alnum($_POST['user_pass']) != true)
+		{
+				/*** if there is no match ***/
+				$message = "Password must be alpha numeric";
+	}
 else
 {
     /*** if we are here the data is valid and we can insert it into database ***/
@@ -49,13 +48,13 @@ else
     $mysql_hostname = 'localhost';
 
     /*** mysql username ***/
-    $mysql_username = 'root';
+    $mysql_username = 'bhaloachee';
 
     /*** mysql password ***/
-    $mysql_password = '';
+    $mysql_password = '19A14t1&';
 
     /*** database name ***/
-    $mysql_dbname = 'va_test';
+    $mysql_dbname = 'bhaloach_dev';
 
     try
     {
@@ -66,8 +65,7 @@ else
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         /*** prepare the select statement ***/
-        $stmt = $dbh->prepare("SELECT user_id, user_name, user_pass FROM users 
-                    WHERE user_name = :user_name AND user_pass = :user_pass");
+        $stmt = $dbh->prepare("SELECT user_id, user_name, user_pass FROM users WHERE user_name = $user_name AND user_pass = $user_pass");
 
         /*** bind the parameters ***/
         $stmt->bindParam(':user_name', $user_name, PDO::PARAM_STR);

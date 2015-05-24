@@ -51,7 +51,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Bhalo-Achee Deshboard</a>
+                <a class="navbar-brand" href="index.php">Bhalo-Achee Deshboard</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -78,10 +78,9 @@
 
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-              
+                    <ul class="nav" id="side-menu">              
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                        
                         <li>
@@ -132,7 +131,7 @@
 	$per_page = 20;
 	
 	// figure out the total pages in the database
-	$result = mysql_query("SELECT medicin_shop.shop_id,medicin_shop.shop_name, medicin_shop.shop_address, medicin_shop.`24 hour`, medicin_shop.cell, thana.thana_name, districs.distric_name, division.division_name FROM medicin_shop INNER JOIN thana ON medicin_shop.fk_thana = thana.thana_id INNER JOIN districs ON thana.fk_district = districs.distric_id INNER JOIN division ON districs.fk_division = division.division_id ");
+	$result = mysql_query("SELECT shop.shop_id,shop.shop_name, shop.shop_address, shop.twenty_four_hours, shop.`call`, shop.home_delivery, thana.thana_name FROM shop INNER JOIN thana ON shop.thana_fk = thana.thana_name");
 	$total_results = mysql_num_rows($result);
 	$total_pages = ceil($total_results / $per_page);
 
@@ -194,11 +193,9 @@
 		echo "<tr class=\"odd gradeX\">";
 		echo '<td>' . mysql_result($result, $i, 'shop_name') . '</td>';
 		echo '<td>' . mysql_result($result, $i, 'shop_address') . '</td>';
-		echo '<td>' . mysql_result($result, $i, '24 hour') . '</td>';
-		echo '<td>' . mysql_result($result, $i, 'cell') . '</td>';
+		echo '<td>' . mysql_result($result, $i, 'twenty_four_hours') . '</td>';
+		echo '<td>' . mysql_result($result, $i, 'call') . '</td>';
 		echo '<td>' . mysql_result($result, $i, 'thana_name') . '</td>';
-		echo '<td>' . mysql_result($result, $i, 'distric_name') . '</td>';
-		echo '<td>' . mysql_result($result, $i, 'division_name') . '</td>';
 		echo '<td><a href="edit-shop.php?shop_id=' . mysql_result($result, $i, 'shop_id') . '">Edit</a> | <a href="delete-shop.php?shop_id=' . mysql_result($result, $i, 'shop_id') . '">Delete</a></td>';
 		echo "</tr>";
 		
@@ -209,7 +206,7 @@
 	// pagination
 	
 ?>
-<p><a href="new.php">Add a new record</a></p>
+<p><a href="new.php">Add a new Shop</a></p>
                     
                     <!-- /.panel -->
                 </div>

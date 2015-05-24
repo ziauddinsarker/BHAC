@@ -51,7 +51,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Bhalo-Achee Deshboard</a>
+                <a class="navbar-brand" href="index.php">Bhalo-Achee Deshboard</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -78,10 +78,9 @@
 
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-              
+                    <ul class="nav" id="side-menu">              
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                        
                         <li>
@@ -132,23 +131,23 @@
 	$per_page = 20;
 	
 	// figure out the total pages in the database
-	$result = mysql_query("SELECT
-						drags.drag_id,
-						drags.brand_name,
-						generic.generic_name,
-						company.company_name,
-						drug_form.drug_form_name,
-						price.strength,
-						package.package_type,
-						price.drags_price
-						FROM
-						drags
-						INNER JOIN generic ON drags.fk_generic_name = generic.generic_id
-						INNER JOIN company ON drags.fk_company_name = company.company_id
-						INNER JOIN price ON drags.fk_price = price.price_id
-						INNER JOIN package ON price.fk_package = package.package_id
-						INNER JOIN drug_form_mut ON drug_form_mut.drug_name = drags.drag_id
-						INNER JOIN drug_form ON drug_form_mut.drug_form = drug_form.drug_form_id");
+	$result = mysql_query("SELECT 
+							brand_strength_form_price.brand_strength_form_price_id,
+							brand.brand_name,
+							generic.generic_name,
+							strength.strength_name,
+							pack.packsize_name,
+							form.form_name,
+							brand_strength_form_price.price,
+							company.company_name
+							FROM
+							brand_strength_form_price
+							INNER JOIN brand ON brand_strength_form_price.brand_name_fk = brand.brand_name
+							INNER JOIN generic ON brand.generic_name_fk = generic.generic_name
+							INNER JOIN strength ON brand_strength_form_price.strength_name_fk = strength.strength_name
+							INNER JOIN pack ON brand_strength_form_price.packsize_fk = pack.packsize_name
+							INNER JOIN form ON brand_strength_form_price.form_name_fk = form.form_name
+							INNER JOIN company ON brand.company_fk = company.company_name");
 	$total_results = mysql_num_rows($result);
 	$total_pages = ceil($total_results / $per_page);
 
@@ -211,11 +210,11 @@
 		echo '<td>' . mysql_result($result, $i, 'brand_name') . '</td>';
 		echo '<td>' . mysql_result($result, $i, 'generic_name') . '</td>';
 		echo '<td>' . mysql_result($result, $i, 'company_name') . '</td>';
-		echo '<td>' . mysql_result($result, $i, 'drug_form_name') . '</td>';
-		echo '<td>' . mysql_result($result, $i, 'strength') . '</td>';
-		echo '<td>' . mysql_result($result, $i, 'package_type') . '</td>';
-		echo '<td>' . mysql_result($result, $i, 'drags_price') . '</td>';
-		echo '<td><a href="edit-medicine.php?drag_id=' . mysql_result($result, $i, 'drag_id') . '">Edit</a> | <a href="delete-medicine.php?drag_id=' . mysql_result($result, $i, 'drag_id') . '">Delete</a></td>';
+		echo '<td>' . mysql_result($result, $i, 'form_name') . '</td>';
+		echo '<td>' . mysql_result($result, $i, 'strength_name') . '</td>';
+		echo '<td>' . mysql_result($result, $i, 'packsize_name') . '</td>';
+		echo '<td>' . mysql_result($result, $i, 'price') . '</td>';
+		echo '<td><a href="edit-medicine.php?brand_strength_form_price_id=' . mysql_result($result, $i, 'brand_strength_form_price_id') . '">Edit</a> | <a href="delete-medicine.php?brand_strength_form_price_id=' . mysql_result($result, $i, 'brand_strength_form_price_id') . '">Delete</a></td>';
 		echo "</tr>";
 		
 	}
@@ -225,7 +224,7 @@
 	// pagination
 	
 ?>
-<p><a href="new.php">Add a new record</a></p>
+<p><a href="new.php">Add a new Medicine</a></p>
                     
                     <!-- /.panel -->
                 </div>

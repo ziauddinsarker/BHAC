@@ -81,7 +81,7 @@
                     <ul class="nav" id="side-menu">
               
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                        
                         <li>
@@ -132,23 +132,15 @@
 	$per_page = 20;
 	
 	// figure out the total pages in the database
-	$result = mysql_query("SELECT
-						drags.drag_id,
-						drags.brand_name,
-						generic.generic_name,
-						company.company_name,
-						drug_form.drug_form_name,
-						price.strength,
-						package.package_type,
-						price.drags_price
-						FROM
-						drags
-						INNER JOIN generic ON drags.fk_generic_name = generic.generic_id
-						INNER JOIN company ON drags.fk_company_name = company.company_id
-						INNER JOIN price ON drags.fk_price = price.price_id
-						INNER JOIN package ON price.fk_package = package.package_id
-						INNER JOIN drug_form_mut ON drug_form_mut.drug_name = drags.drag_id
-						INNER JOIN drug_form ON drug_form_mut.drug_form = drug_form.drug_form_id");
+	$result = mysql_query("SELECT 
+							blog.blog_id,
+							blog.blog_title,
+							blog.blog_description,
+							blog_category.blog_category_name
+							FROM
+							blog
+							INNER JOIN blog_category ON blog.blog_category = blog_category.blog_category_name
+							");
 	$total_results = mysql_num_rows($result);
 	$total_pages = ceil($total_results / $per_page);
 
@@ -189,13 +181,9 @@
 	// display data in table
 	echo "<table class=\"table table-striped table-bordered table-hover\" id=\"dataTables-example\"><thead>";
 	echo "  <tr>
-			<th>Brand Name</th>
-			<th>Generic Name</th>
-			<th>Company</th>
-			<th>Form</th>
-			<th>Strength</th>
-			<th>Package</th>
-			<th>Price</th>
+			<th>Blog Title</th>
+			<th>Blog Description</th>
+			<th>Blog Category</th>			
 		</tr> 
 		</thead>
         <tbody>";
@@ -208,14 +196,10 @@
 	
 		// echo out the contents of each row into a table
 		echo "<tr class=\"odd gradeX\">";
-		echo '<td>' . mysql_result($result, $i, 'brand_name') . '</td>';
-		echo '<td>' . mysql_result($result, $i, 'generic_name') . '</td>';
-		echo '<td>' . mysql_result($result, $i, 'company_name') . '</td>';
-		echo '<td>' . mysql_result($result, $i, 'drug_form_name') . '</td>';
-		echo '<td>' . mysql_result($result, $i, 'strength') . '</td>';
-		echo '<td>' . mysql_result($result, $i, 'package_type') . '</td>';
-		echo '<td>' . mysql_result($result, $i, 'drags_price') . '</td>';
-		echo '<td><a href="edit-medicine.php?drag_id=' . mysql_result($result, $i, 'drag_id') . '">Edit</a> | <a href="delete-medicine.php?drag_id=' . mysql_result($result, $i, 'drag_id') . '">Delete</a></td>';
+		echo '<td>' . mysql_result($result, $i, 'blog_title') . '</td>';
+		echo '<td>' . mysql_result($result, $i, 'blog_description') . '</td>';
+		echo '<td>' . mysql_result($result, $i, 'blog_category_name') . '</td>';
+		echo '<td><a href="edit-medicine.php?blog_id=' . mysql_result($result, $i, 'blog_id') . '">Edit</a> | <a href="delete-medicine.php?blog_id=' . mysql_result($result, $i, 'blog_id') . '">Delete</a></td>';
 		echo "</tr>";
 		
 	}
@@ -225,7 +209,7 @@
 	// pagination
 	
 ?>
-<p><a href="new.php">Add a new record</a></p>
+<p><a href="new.php">Add a new Blog</a></p>
                     
                     <!-- /.panel -->
                 </div>

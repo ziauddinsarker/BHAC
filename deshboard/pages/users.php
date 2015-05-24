@@ -51,7 +51,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Bhalo-Achee Deshboard</a>
+                <a class="navbar-brand" href="index.php">Bhalo-Achee Deshboard</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -78,26 +78,25 @@
 
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-              
+                    <ul class="nav" id="side-menu">              
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                        
                         <li>
-                            <a href="medicine.html"><i class="fa fa-table fa-fw"></i> Medicine </a>
+                            <a href="medicine.php"><i class="fa fa-table fa-fw"></i> Medicine </a>
                         </li>
                         <li>
-                            <a href="shop.html"><i class="fa fa-edit fa-fw"></i> Shop</a>
+                            <a href="shop.php"><i class="fa fa-edit fa-fw"></i> Shop</a>
                         </li>
                         <li>
-                            <a href="doctors.html"><i class="fa fa-wrench fa-fw"></i>Doctors</a>
+                            <a href="doctors.php"><i class="fa fa-wrench fa-fw"></i>Doctors</a>
                         </li>
 						 <li>
-                            <a href="users.html"><i class="fa fa-bar-chart-o fa-fw"></i> User</a>
+                            <a href="users.php"><i class="fa fa-bar-chart-o fa-fw"></i> User</a>
                         </li>
                         <li>
-                            <a href="blog.html"><i class="fa fa-sitemap fa-fw"></i> Blog</a>
+                            <a href="blog.php"><i class="fa fa-sitemap fa-fw"></i> Blog</a>
                         </li>
                  
                     </ul>
@@ -132,7 +131,7 @@
 	$per_page = 20;
 	
 	// figure out the total pages in the database
-	$result = mysql_query("SELECT users.user_name, users.user_pass FROM users");
+	$result = mysql_query("SELECT users.user_id,users.user_name, users.user_email FROM users");
 	$total_results = mysql_num_rows($result);
 	$total_pages = ceil($total_results / $per_page);
 
@@ -174,6 +173,7 @@
 	echo "<table class=\"table table-striped table-bordered table-hover\" id=\"dataTables-example\"><thead>";
 	echo "  <tr>
 			<th>User Name</th>
+			<th>User Email</th>
 			<th>Update/Delete</th>
 		</tr> 
 		</thead>
@@ -188,7 +188,7 @@
 		// echo out the contents of each row into a table
 		echo "<tr class=\"odd gradeX\">";
 		echo '<td>' . mysql_result($result, $i, 'user_name') . '</td>';
-
+		echo '<td>' . mysql_result($result, $i, 'user_email') . '</td>';
 		echo '<td><a href="edit-user.php?user_id=' . mysql_result($result, $i, 'user_id') . '">Edit</a> | <a href="delete-user.php?user_id=' . mysql_result($result, $i, 'user_id') . '">Delete</a></td>';
 		echo "</tr>";
 		
@@ -199,7 +199,7 @@
 	// pagination
 	
 ?>
-<p><a href="new.php">Add a new record</a></p>
+<p><a href="new.php">Add a new User</a></p>
                     
                     <!-- /.panel -->
                 </div>

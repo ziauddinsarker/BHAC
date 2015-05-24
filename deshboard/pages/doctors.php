@@ -51,7 +51,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Bhalo-Achee Deshboard</a>
+                <a class="navbar-brand" href="index.php">Bhalo-Achee Deshboard</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -78,26 +78,25 @@
 
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-              
+                    <ul class="nav" id="side-menu">              
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                        
                         <li>
-                            <a href="medicine.html"><i class="fa fa-table fa-fw"></i> Medicine </a>
+                            <a href="medicine.php"><i class="fa fa-table fa-fw"></i> Medicine </a>
                         </li>
                         <li>
-                            <a href="shop.html"><i class="fa fa-edit fa-fw"></i> Shop</a>
+                            <a href="shop.php"><i class="fa fa-edit fa-fw"></i> Shop</a>
                         </li>
                         <li>
-                            <a href="doctors.html"><i class="fa fa-wrench fa-fw"></i>Doctors</a>
+                            <a href="doctors.php"><i class="fa fa-wrench fa-fw"></i>Doctors</a>
                         </li>
 						 <li>
-                            <a href="users.html"><i class="fa fa-bar-chart-o fa-fw"></i> User</a>
+                            <a href="users.php"><i class="fa fa-bar-chart-o fa-fw"></i> User</a>
                         </li>
                         <li>
-                            <a href="blog.html"><i class="fa fa-sitemap fa-fw"></i> Blog</a>
+                            <a href="blog.php"><i class="fa fa-sitemap fa-fw"></i> Blog</a>
                         </li>
                  
                     </ul>
@@ -133,22 +132,14 @@
 	
 	// figure out the total pages in the database
 	$result = mysql_query("SELECT
-						drags.drag_id,
-						drags.brand_name,
-						generic.generic_name,
-						company.company_name,
-						drug_form.drug_form_name,
-						price.strength,
-						package.package_type,
-						price.drags_price
-						FROM
-						drags
-						INNER JOIN generic ON drags.fk_generic_name = generic.generic_id
-						INNER JOIN company ON drags.fk_company_name = company.company_id
-						INNER JOIN price ON drags.fk_price = price.price_id
-						INNER JOIN package ON price.fk_package = package.package_id
-						INNER JOIN drug_form_mut ON drug_form_mut.drug_name = drags.drag_id
-						INNER JOIN drug_form ON drug_form_mut.drug_form = drug_form.drug_form_id");
+							doctors.doctors_id,
+							doctors.doctors_name,
+							doctors.doctors_designation,
+							doctors.doctors_chembers,
+							doctors_category.doctors_category_name
+							FROM
+							doctors
+							INNER JOIN doctors_category ON doctors.doctors_category = doctors_category.doctors_category_name");
 	$total_results = mysql_num_rows($result);
 	$total_pages = ceil($total_results / $per_page);
 
@@ -192,6 +183,7 @@
 			<th>Doctors Name</th>
 			<th>Doctors Designation</th>
 			<th>Doctors Chembers</th>
+			<th>Doctors Category</th>
 		
 		</tr> 
 		</thead>
@@ -205,10 +197,11 @@
 	
 		// echo out the contents of each row into a table
 		echo "<tr class=\"odd gradeX\">";
-		echo '<td>' . mysql_result($result, $i, 'brand_name') . '</td>';
-		echo '<td>' . mysql_result($result, $i, 'generic_name') . '</td>';
-		echo '<td>' . mysql_result($result, $i, 'company_name') . '</td>';
-		echo '<td><a href="edit-medicine.php?drag_id=' . mysql_result($result, $i, 'drag_id') . '">Edit</a> | <a href="delete-medicine.php?drag_id=' . mysql_result($result, $i, 'drag_id') . '">Delete</a></td>';
+		echo '<td>' . mysql_result($result, $i, 'doctors_name') . '</td>';
+		echo '<td>' . mysql_result($result, $i, 'doctors_designation') . '</td>';
+		echo '<td>' . mysql_result($result, $i, 'doctors_chembers') . '</td>';
+		echo '<td>' . mysql_result($result, $i, 'doctors_category_name') . '</td>';
+		echo '<td><a href="edit-medicine.php?doctors_id=' . mysql_result($result, $i, 'doctors_id') . '">Edit</a> | <a href="delete-medicine.php?doctors_id=' . mysql_result($result, $i, 'doctors_id') . '">Delete</a></td>';
 		echo "</tr>";
 		
 	}
@@ -218,7 +211,7 @@
 	// pagination
 	
 ?>
-<p><a href="new.php">Add a new record</a></p>
+<p><a href="new.php">Add a new Doctors</a></p>
                     
                     <!-- /.panel -->
                 </div>

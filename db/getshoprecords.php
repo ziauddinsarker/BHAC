@@ -8,12 +8,12 @@
  */
 require_once("configshop.php");
 $thana=$_GET['thana'];
-echo "name: " .$thana;
+//echo "name: " .$thana;
 
 $limit = (intval($_GET['limit']) != 0 ) ? $_GET['limit'] : 10;
 $offset = (intval($_GET['offset']) != 0 ) ? $_GET['offset'] : 0;
 
-$sql = "SELECT shop.shop_name,shop.shop_address,shop.`call`,shop.twenty_four_hours,shop.home_delivery,thana.thana_name FROM shop INNER JOIN thana ON shop.thana = thana.thana_name WHERE 1 AND thana.thana_name = '$thana' ORDER BY shop_name ASC LIMIT $limit OFFSET $offset";
+$sql = "SELECT shop.shop_name, shop.shop_address, shop.twenty_four_hours, shop.`call`, shop.home_delivery, thana.thana_name FROM shop INNER JOIN thana ON shop.thana_fk = thana.thana_name WHERE thana.thana_name = '$thana' ORDER BY shop_name ASC LIMIT $limit OFFSET $offset";
 	try {
 	  $stmt = $DB->prepare($sql);
 	  $stmt->execute();
