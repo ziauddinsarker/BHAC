@@ -1,38 +1,3 @@
-<?php 
-include('connect-db.php');
-
-$user_i = $_GET['user_id'];
-
-echo $user_i;
-
-if(!isset($_GET['user_id']) || $_GET['user_id'] == ''){ //if no id is passed to this page take user back to previous page
-	header("Location: http://localhost/dev/deshboard/pages/index.php");
-}
-if(isset($_POST['submit'])){
-	
-		
-	$user_id = $_POST['user_id'];
-	$user_name = $_POST['user_name'];
-	$user_email = $_POST['user_email'];
-	$user_pass = $_POST['user_pass'];
-	
-	
-	echo $user_id;
-	echo $user_name;
-	echo $user_email;
-	
-	$user_name = mysql_real_escape_string($user_name);
-	$user_email = mysql_real_escape_string($user_email);
-	
-	mysql_query("UPDATE users SET user_name='$user_name', user_email='$user_email' WHERE user_id='$user_id'");
-	$_SESSION['success'] = 'Page Updated';
-	header("Location: http://localhost/dev/deshboard/pages/index.php");
-	exit();
-
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -145,32 +110,41 @@ if(isset($_POST['submit'])){
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header"> Edit Users</h1>
-                </div>
-				
-                <!-- /.col-lg-12 -->
+                    <h1 class="page-header"> Delete Medicine</h1>
+					
+					
+					<?php
+					include('connect-db.php');
+					// get value of id that sent from address bar 
+					$id = $_GET['brand_strength_form_price_id'];
+
+					// Delete data in mysql from row that has this id 
+					$sql="DELETE FROM brand_strength_form_price WHERE brand_strength_form_price_id = '$id'";
+					$result=mysql_query($sql);
+
+					// if successfully deleted
+					if($result){
+					echo "Deleted Successfully";
+					echo "<BR>";
+					echo "<a href='medicine.php'>Back to main page</a>";
+					}
+
+					else {
+					echo "ERROR";
+					}
+					?> 
+
+					<?php
+					// close connection 
+					mysql_close();
+					?>
+                </div>			
             </div>
+			
             <!-- /.row -->
-			
-			<?php
-			$id = $_GET['user_id'];
-			$id = mysql_real_escape_string($id);
-			$query = mysql_query("SELECT * FROM users WHERE user_id='$id'");
-			$row = mysql_fetch_object($query);			
-			?>
-							
-			
              <div class="row">
                 <div class="col-lg-12">
-				 <form action="" method="post">
-					 <input type="hidden" name="user_id" value="<?php echo $row->user_id;?>"/>
-					 <div>					
-						 <strong>User Name: *</strong> <input type="text" name="user_name" value="<?php echo $row->user_name;?>"/><br/>
-						 <strong>User Email: *</strong> <input type="text" name="user_email" value="<?php echo $row->user_email;?>"/><br/>
-						 <input type="submit" name="submit" value="Submit">
-					 </div>
-				 </form> 
-
+			
                     
                     <!-- /.panel -->
                 </div>
@@ -205,4 +179,3 @@ if(isset($_POST['submit'])){
 </body>
 
 </html>
-

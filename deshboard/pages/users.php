@@ -199,7 +199,7 @@
 	// pagination
 	
 ?>
-<p><a href="new.php">Add a new User</a></p>
+<p><a href="adduser.php">Add a new User</a></p>
                     
                     <!-- /.panel -->
                 </div>

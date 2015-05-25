@@ -1,14 +1,42 @@
-<?php
-/* 
- EDIT.PHP
- Allows user to edit specific entry in database
-*/
+<?php 
+include('connect-db.php');
 
- // creates the edit record form
- // since this form is used multiple times in this file, I have made it a function that is easily reusable
- function renderForm($drag_id, $brand_name, $generic_name, $company_name, $drug_form_name, $strength, $package_type, $drags_price, $error)
- {
- ?>
+$user_i = $_GET['brand_strength_form_price_id'];
+
+echo $user_i;
+
+if(!isset($_GET['brand_strength_form_price_id']) || $_GET['brand_strength_form_price_id'] == ''){ //if no id is passed to this page take user back to previous page
+	header("Location: http://localhost/dev/deshboard/pages/index.php");
+}
+
+if(isset($_POST['submit'])){
+
+	
+	$brand_name = $_POST['brand_name'];
+	$generic_name = $_POST['generic_name']; 	
+	$company = $_POST['company_name'];	
+	$form = $_POST['form_name']; 	
+	$strength = $_POST['strength_name']; 	
+	$package = $_POST['packsize_name']; 	
+	$price = $_POST['price'];
+
+	
+	$brand_name = mysql_real_escape_string($brand_name);
+	$generic_name = mysql_real_escape_string($generic_name);
+	$company = mysql_real_escape_string($company);
+	$form = mysql_real_escape_string($form);
+	$strength = mysql_real_escape_string($strength);
+	$package = mysql_real_escape_string($package);
+	$price = mysql_real_escape_string($price);
+	
+	mysql_query("UPDATE brand_strength_form_price SET brand_name='$brand_name', generic_name='$generic_name',company='$company', form='$form', strength='$strength', package='$package', price='$price' WHERE brand_strength_form_price_id='$brand_strength_form_price_ids'");
+	$_SESSION['success'] = 'Page Updated';
+	header("Location: http://localhost/dev/deshboard/pages/index.php");
+	exit();
+
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -93,23 +121,23 @@
                     <ul class="nav" id="side-menu">
               
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                        
                         <li>
-                            <a href="medicine.html"><i class="fa fa-table fa-fw"></i> Medicine </a>
+                            <a href="medicine.php"><i class="fa fa-table fa-fw"></i> Medicine </a>
                         </li>
                         <li>
-                            <a href="shop.html"><i class="fa fa-edit fa-fw"></i> Shop</a>
+                            <a href="shop.php"><i class="fa fa-edit fa-fw"></i> Shop</a>
                         </li>
                         <li>
-                            <a href="doctors.html"><i class="fa fa-wrench fa-fw"></i>Doctors</a>
+                            <a href="doctors.php"><i class="fa fa-wrench fa-fw"></i>Doctors</a>
                         </li>
 						 <li>
-                            <a href="users.html"><i class="fa fa-bar-chart-o fa-fw"></i> User</a>
+                            <a href="users.php"><i class="fa fa-bar-chart-o fa-fw"></i> User</a>
                         </li>
                         <li>
-                            <a href="blog.html"><i class="fa fa-sitemap fa-fw"></i> Blog</a>
+                            <a href="blog.php"><i class="fa fa-sitemap fa-fw"></i> Blog</a>
                         </li>
                  
                     </ul>
@@ -123,30 +151,43 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header"> Edit Medicine</h1>
-                </div>
-				<?php 
-					 // if there are any errors, display them
-					 if ($error != '')
-					 {
-					 echo '<div style="padding:4px; border:1px solid red; color:red;">'.$error.'</div>';
-					 }
-					 ?> 
-                <!-- /.col-lg-12 -->
+                </div>			
             </div>
+			
             <!-- /.row -->
              <div class="row">
                 <div class="col-lg-12">
 				 <form action="" method="post">
 					 <input type="hidden" name="drag_id" value="<?php echo $drag_id; ?>"/>
 					 <div>
-					
-					 <strong>Brand Name: *</strong> <input type="text" name="brand_name" value="<?php echo $brand_name; ?>"/><br/>
-					 <strong>Generic Name: *</strong> <input type="text" name="generic_name" value="<?php echo $generic_name; ?>"/><br/>
-					 <strong>Company Name: *</strong> <input type="text" name="company_name" value="<?php echo $company_name; ?>"/><br/>
-					 <strong>Drug Form: *</strong> <input type="text" name="company_name" value="<?php echo $drug_form_name; ?>"/><br/>
-					 <strong>Drug Strength: *</strong> <input type="text" name="company_name" value="<?php echo $strength; ?>"/><br/>
-					 <strong>Package Type: *</strong> <input type="text" name="company_name" value="<?php echo $package_type; ?>"/><br/>
-					 <strong>Drug Price: *</strong> <input type="text" name="company_name" value="<?php echo $drags_price; ?>"/><br/>
+					 <?php
+						$id = $_GET['brand_strength_form_price_id'];
+						$id = mysql_real_escape_string($id);
+						$query = mysql_query("SELECT
+								brand_strength_form_price.brand_strength_form_price_id,
+								brand_strength_form_price.brand_name_fk,
+								brand_strength_form_price.strength_name_fk,
+								brand_strength_form_price.packsize_fk,
+								brand_strength_form_price.form_name_fk,
+								brand_strength_form_price.price,
+								generic.generic_name,
+								company.company_name
+								FROM
+								brand_strength_form_price
+								INNER JOIN brand ON brand_strength_form_price.brand_name_fk = brand.brand_name
+								INNER JOIN generic ON brand.generic_name_fk = generic.generic_name
+								INNER JOIN company ON brand.company_fk = company.company_name
+								WHERE brand_strength_form_price_id='$id'");
+						$row = mysql_fetch_object($query);			
+					?>
+							
+					 <strong>Brand Name: *</strong> <input type="text" name="brand_name" value="<?php echo $row->brand_name_fk;?>"/><br/>
+					 <strong>Generic Name: *</strong> <input type="text" name="generic_name" value="<?php echo $row->generic_name;?>"/><br/>
+					 <strong>Company Name: *</strong> <input type="text" name="company_name" value="<?php echo $row->company_name;?>"/><br/>
+					 <strong>Drug Form: *</strong> <input type="text" name="form_name" value="<?php echo $row->form_name_fk;?>"/><br/>
+					 <strong>Drug Strength: *</strong> <input type="text" name="strength_name" value="<?php echo $row->strength_name_fk;?>"/><br/>
+					 <strong>Package Type: *</strong> <input type="text" name="packsize_name" value="<?php echo $row->packsize_fk;?>"/><br/>
+					 <strong>Drug Price: *</strong> <input type="text" name="price" value="<?php echo $row->price;?>"/><br/>
 					 <p>* Required</p>
 					 <input type="submit" name="submit" value="Submit">
 					 </div>
@@ -186,127 +227,3 @@
 </body>
 
 </html>
-
-<?php
- }
- // connect to the database
- include('connect-db.php');
- 
- // check if the form has been submitted. If it has, process the form and save it to the database
- if (isset($_POST['submit']))
- { 
- // confirm that the 'id' value is a valid integer before getting the form data
- if (is_numeric($_POST['drag_id']))
- {
- // get form data, making sure it is valid
- $id = $_POST['drag_id'];
- $brand_name = mysql_real_escape_string(htmlspecialchars($_POST['brand_name']));
- $generic_name = mysql_real_escape_string(htmlspecialchars($_POST['generic_name']));
- $company_name = mysql_real_escape_string(htmlspecialchars($_POST['company_name']));
- $drug_form_name = mysql_real_escape_string(htmlspecialchars($_POST['drug_form_name']));
- $strength = mysql_real_escape_string(htmlspecialchars($_POST['strength']));
- $package_type = mysql_real_escape_string(htmlspecialchars($_POST['package_type']));
- $drags_price = mysql_real_escape_string(htmlspecialchars($_POST['drags_price']));
- 
- 
- 
- 
- // check that firstname/lastname fields are both filled in
- if ($brand_name == '' || $generic_name == '' || $company_name == '' || $drug_form_name == '' ||  $strength == '' || $package_type == '' || $drags_price == '')
- {
- // generate error message
- $error = 'ERROR: Please fill in all required fields!';
- 
- //error, display form
- renderForm($drag_id, $brand_name, $generic_name, $company_name, $drug_form_name, $strength, $package_type, $drags_price, $error);
- }
- else
- {
- // save the data to the database
- //mysql_query("UPDATE drags SET firstname='$firstname', lastname='$lastname' WHERE id='$id'")
-mysql_query("UPDATE drags INNER JOIN generic ON drags.fk_generic_name = generic.generic_id INNER JOIN company ON drags.fk_company_name = company.company_id
-	INNER JOIN price ON drags.fk_price = price.price_id
-	INNER JOIN package ON price.fk_package = package.package_id
-	INNER JOIN drug_form_mut ON drug_form_mut.drug_name = drags.drag_id
-	INNER JOIN drug_form ON drug_form_mut.drug_form = drug_form.drug_form_id
-	SET
-	drags.brand_name = '$brand_name',
-	generic.generic_name = '$generic_name',
-	company.company_name = '$company_name',
-	drug_form.drug_form_name = '$drug_form_name',
-	price.strength = '$strength',
-	package.package_type = '$package_type',
-	price.drags_price = '$drags_price'
-	WHERE
-	drag_id='$drag_id'")
- or die(mysql_error()); 
- 
- // once saved, redirect back to the view page
- header("Location: medicine.php"); 
- }
- }
- else
- {
- // if the 'id' isn't valid, display an error
- echo 'Error!';
- }
- }
- else
- // if the form hasn't been submitted, get the data from the db and display the form
- {
- 
- // get the 'id' value from the URL (if it exists), making sure that it is valid (checking that it is numeric/larger than 0)
- if (isset($_GET['drag_id']) && is_numeric($_GET['drag_id']) && $_GET['drag_id'] > 0)
- {
- // query db
- $drag_id = $_GET['drag_id'];
- $result = mysql_query("SELECT
-						drags.drag_id,
-						drags.brand_name,
-						generic.generic_name,
-						company.company_name,
-						drug_form.drug_form_name,
-						price.strength,
-						package.package_type,
-						price.drags_price
-						FROM
-						drags
-						INNER JOIN generic ON drags.fk_generic_name = generic.generic_id
-						INNER JOIN company ON drags.fk_company_name = company.company_id
-						INNER JOIN price ON drags.fk_price = price.price_id
-						INNER JOIN package ON price.fk_package = package.package_id
-						INNER JOIN drug_form_mut ON drug_form_mut.drug_name = drags.drag_id
-						INNER JOIN drug_form ON drug_form_mut.drug_form = drug_form.drug_form_id WHERE drag_id=$drag_id")
- or die(mysql_error()); 
- $row = mysql_fetch_array($result);
- 
- // check that the 'id' matches up with a row in the databse
- if($row)
- {
- 
- // get data from db
- $brand_name = $row['brand_name'];
- $generic_name = $row['generic_name'];
- $company_name = $row['company_name'];
- $drug_form_name = $row['drug_form_name'];
- $strength = $row['strength'];
- $package_type = $row['package_type'];
- $drags_price = $row['drags_price'];
- 
- 
- // show form
- renderForm( $drag_id, $brand_name, $generic_name, $company_name, $drug_form_name, $strength, $package_type, $drags_price, '');
- }
- else
- // if no match, display result
- {
- echo "No results!";
- }
- }
- else
- // if the 'id' in the URL isn't valid, or if there is no 'id' value, display an error
- {
- echo 'Error!';
- }
- }
-?>
