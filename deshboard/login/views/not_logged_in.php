@@ -27,4 +27,4 @@ if (isset($login)) {
 
 </form>
 
-<a href="register.php">Register new account</a>
+<a href="register.php">Register new account </a> | <a href="register-doctor.php"> Register Doctor </a> | <a href="register.php"> Register Company</a>
