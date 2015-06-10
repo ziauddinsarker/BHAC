@@ -1,25 +1,39 @@
 
-		<footer id="footer">
-		  <div class="container">
-			<div class="row">		
-				<div class="col-md-6 footer-navigation">
+	<footer id="footer">
+      <div class="container">
+	  <!--
+		<div class="row">
+			<div class="col-md-4">
+				<h5>Footer 1</h5>
+			</div>
+			
+			<div class="col-md-4">
+				<h5>Footer 2</h5>
+			</div>
+			
+			<div class="col-md-4">
+				<h5>Footer 3</h5>
+			</div>
+		</div>
+		-->
+		<div class="row">		
+			<div class="col-md-6 footer-navigation">
 
-					<!--			
-					<nav>
-						<a href="#">About Us</a>		
-						<a href="#">Legal</a>		
-						<a href="#">Copyright</a>			
-						<a>Contact Us</a>			
-						<a>Report an Error</a>	
-					</nav>
-					-->
-				 </div>
-				<div class="col-md-6 copyright">	
-					<p>&copy; Bhalo-Aachee - 2015. All Rights Reserved.</p>
-				</div>
-		  </div>
-		  </div>
-		</footer>
+				<!--			
+				<nav>
+					<a href="#">About Us</a>		
+					<a href="#">Legal</a>		
+					<a href="#">Copyright</a>			
+					<a>Contact Us</a>			
+					<a>Report an Error</a>	
+				</nav>
+				-->
+			 </div>
+			<div class="col-md-6 copyright">	
+				<p>&copy; Bhalo-Aachee - 2015. All Rights Reserved.</p>
+			</div>
+      </div>
+    </footer>
 	  <!--Footer Ends Here -->	 
 	  
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
@@ -287,14 +301,6 @@
       });
 
     </script>
-	
-	
-	<script>
-		$('#myTab a').click(function (e) {
-		  e.preventDefault()
-		  $(this).tab('show')
-		})
-	</script>
 		
     </body>
 </html>

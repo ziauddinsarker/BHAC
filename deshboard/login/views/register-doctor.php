@@ -14,9 +14,10 @@ if (isset($registration)) {
 }
 ?>
 <?php
-/*
-include './../../templates/header.php';?>	
+
+include 'templates/header.php';?>	
 <?php
+/*
 $hostname = "ziauddins.com";
 var_dump($hostname );
 var_dump(gethostbyname($hostname ));
@@ -76,7 +77,7 @@ function testipaddress ($nametotest) {
 
 <!-- register form -->
 <article class="row">		
-<form method="post" action="register.php" name="registerDoctor">
+<form method="post" action="register.php">
 	
 	<!-- the name input field -->
 	<label for="login_input_name">Name(Full Name)</label>
@@ -128,11 +129,11 @@ function testipaddress ($nametotest) {
     <input id="login_input_password_repeat" class="login_input" type="password" name="user_password_repeat" pattern=".{6,}" required autocomplete="off" />
 	
 	<!-- the Submit input field -->
-	<input type="submit"  name="register" value="Register" />
+	<input type="submit"  name="registerDoctor" value="Register" />
 
 	</form>
 
 <!-- backlink -->
 <a href="index.php">Back to Login Page</a>
 </article>
-<?php include './../../templates/footer.php';?>	
+<?php include 'templates/footer.php';?>	

@@ -44,7 +44,7 @@
 		  <nav class="main-nav nav navbar-nav navbar-right">
 			<ul>
 			<li><a class="cd-signin btn btn-primary" href="http://127.0.0.1/dev/deshboard/login/index.php">Sign in</a></li>
-			<li><a class="cd-signup btn btn-primary" href="http://127.0.0.1/dev/signup.php">Sign up</a></li>
+			<li><a class="cd-signup btn btn-primary" href="http://127.0.0.1/dev/deshboard/login/index.php">Sign up</a></li>
 				 <!-- 
 				<li><a class="cd-signin" href="#0">Sign in</a></li>
 				<li><a class="cd-signup" href="#0">Sign up</a></li>
